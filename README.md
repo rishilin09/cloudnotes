@@ -1,1 +1,1 @@
-Welcome to Clod Notes Application!
+Welcome to Cloud Notes Application!
