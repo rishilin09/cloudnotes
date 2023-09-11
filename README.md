@@ -1,1 +1,1 @@
-Welcome to Cloud Notes Application!
+Welcome to Take Notes Application!
