@@ -4,5 +4,5 @@ WORKDIR /usr/src/app
 COPY . .
 RUN npm install
 RUN npm run build-prod
-EXPOSE 80
+EXPOSE 4200
 CMD ["npm","start"]
