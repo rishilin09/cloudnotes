@@ -1,6 +1,9 @@
-FROM node:16.20.2-alpine
-WORKDIR app
-COPY . .
+FROM node:16-alpine AS build
+RUN mkdir app
+WORKDIR /app
+COPY package*.json ./
 RUN npm install
-EXPOSE 80
+COPY . .
+RUN npm run build-prod
+EXPOSE 4200
 CMD ["npm","start"]
